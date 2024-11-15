@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   table, tr,th,td{
+        border: solid black 1px;
+    }
+    th{
+        background-color: aqua;
+    }
+    td{
+        background-color: bisque;
+        padding: 5px;
+        padding-right: 50px;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <th>Roll no:</th>
+            <th>Name:</th>
+            <th>age:</th>
+        </tr>
+       <% for(user of result){ %>
+
+            <tr>
+                <td><%= user.roll_no %></td>
+                <td><%= user.name %></td>
+                <td><%= user.age %></td>
+            </tr>
+      <%  } %>
+    </table>
+</body>
+</html>
+
+
